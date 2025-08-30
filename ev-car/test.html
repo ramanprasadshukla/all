@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Car Images</title>
+    <style>
+        .viewer {
+            width: 70%;
+            margin: 20px auto;
+            background-color: #eee;
+            border: 2px solid #ccc;
+            user-select: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        img {
+            cursor: grab;
+            width: 70%;
+            height: auto;
+            touch-action: none; 
+        }
+
+        img:active {
+            cursor: grabbing;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="car-viewers"></div>
+
+    <script>
+        const cars = [
+            {
+                id: "car1",
+                colour: "black",
+                src: "https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2026/toyotacrown/nightshade/4025/1l6/36/",
+                srcRed: "https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2026/toyotacrown/limited/4020/3u9/36/",
+                alt: "Toyota Crown",
+                currentImage: 10
+            },
+            {
+                id: "car2",
+                colour: "blue",
+                src: "https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2026/grsupra/3-0premium/2374/d13/36/",
+                srcRed: "https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2026/grsupra/3-0premium/2374/d05/36/",
+                alt: "Toyota Supra",
+                currentImage: 10
+            }
+        ];
+
+        
+        
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,14 @@
+#update-form-1, #update-form-2{
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  #update-form-1, #update-form-2{
+    width: 90%;
+  }
+}

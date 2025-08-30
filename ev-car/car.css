@@ -1,0 +1,279 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.navbar select {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.car-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.car-card {
+    background: #fff;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+#search-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.car-card:hover {
+    transform: scale(1.015);
+}
+
+.car-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+button {
+    margin: 10px 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.details-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.book-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.buy-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.details-section {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.details-section h2 {
+    margin-bottom: 10px;
+}
+
+.details-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.details-image {
+    flex: 1;
+    text-align: center;
+}
+
+.details-car-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Login Page Styles */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Header Styles */
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.user-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-options span {
+    font-size: 16px;
+    color: #fff;
+}
+
+.user-options button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.user-options button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .car-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#logo{
+    height: 100px;
+    width: auto;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+#home-vid {
+    z-index: -10000;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 22%;
+    left: 0;
+}
+#main-cont {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px auto;
+    width: 85%;
+    height: 100%;
+    border: 1px solid #161616;
+}
+
+#main-fi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.car-item{
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 70%;
+    height: 100%;
+    border: 1px solid #161616;
+}
+
+.mfi img {
+    width: 90%;
+    height: auto;
+    border-radius: 3%;
+}

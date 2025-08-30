@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic-Car</title>
+    <link rel="stylesheet" href="car.css">
+</head>
+<body>
+    <header>
+
+      <div id="main-header" style="display: flex; justify-content: space-between; align-items: center; padding: 10px; width: 100%;">
+        <div class="header-container" style="display: flex; align-items: center; padding: 10px; width: 100%;">
+          <img id="logo" src="Preview.png" alt="logo">
+        <h1> Get Your Electric Car</h1>
+      </div>
+        <div class="user-options">
+          <span id="user-id-display">Guest</span>
+          <button id="settings-btn">Settings</button>
+          <button id="logout-btn">Logout</button>
+        </div>
+      </div>
+        
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+          <div class="select-op">
+            <label for="show-cars-btn"> Select Car </label>
+            <select id="show-cars-btn"></select>
+
+          </div>
+          <div class="select-op">
+            
+            <select id="show-details-btn">Booking & Purchase Details</select>
+          </div>
+          <div class="select-op">
+            
+            <select id="show-favorites-btn">Favorites</select>
+          </div>
+          <select id="show-reviews-btn">Reviews</select>
+          <select id="show-search-options">Filter</select>
+          <select id="show-compare-btn">Compare Cars</select>
+        </nav>
+      </header>
+        
+    <!-- Car Search Section -->
+    <section class="search-section" id="search-section" style="display: none;">
+        <h2>Search for Your Perfect EV Car</h2>
+        <form id="search-form">
+            <div>
+            <label htmlFor="01">
+              <input type="radio" value="10000" name="typeOfMovie" id="01" />
+              $10000 MAX
+            </label>
+            <label htmlFor="02">
+              <input type="radio" value="20000" name="typeOfMovie" id="02" />
+              $20000 MAX
+            </label>
+            <label htmlFor="03">
+              <input type="radio" value="50000" name="typeOfMovie" id="03" />
+              $50000 MAX
+            </label>
+            <label htmlFor="04">
+              <input type="radio" value="100000" name="typeOfMovie" id="04" />
+              $100000 MAX
+            </label>
+            <label htmlFor="05">
+              <input type="radio" value="500000" name="typeOfMovie" id="05" />
+                $500000 MAX
+            </label>
+            <label htmlFor="06">
+              <input type="radio" value="1000000" name="typeOfMovie" id="06" />
+                $1000000 MAX
+            </label>
+          </div>
+        </form>
+        <button id="search-btn">Filter</button>
+    </section>
+
+    <!-- EV Car Container -->
+    <div class="car-viewers" id="car-viewers">
+      <video id="home-vid" width="100%" autoplay="true" class="video-player show" data-video-src-mobile="/content/dam/toyota/vehicles/2025/crownsignia/mlp/owners-video/CRS_MY25_LCH_WelcomeMat_TCOM_Mobile.mp4?wid=767" data-video-src-tablet="/content/dam/toyota/vehicles/2025/crownsignia/mlp/owners-video/CRS_MY25_LCH_WelcomeMat_TCOM_Desktop_1920x79.mp4?wid=1439" data-video-src-desktop="/content/dam/toyota/vehicles/2025/crownsignia/mlp/owners-video/CRS_MY25_LCH_WelcomeMat_TCOM_Desktop_1920x79.mp4?wid=1919" data-video-src-lg-desktop="/content/dam/toyota/vehicles/2025/crownsignia/mlp/owners-video/CRS_MY25_LCH_WelcomeMat_TCOM_Desktop_1920x79.mp4?wid=1920" data-autoplay="true" data-loop="true" muted="" playsinline="" loop="true">
+        <track kind="descriptions" src="/content/dam/toyota/webvtt/default.vtt" srclang="en">
+        <source src="https://www.toyota.com/content/dam/toyota/vehicles/2025/crownsignia/mlp/owners-video/CRS_MY25_LCH_WelcomeMat_TCOM_Mobile.mp4?wid=767" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div id="main-cont">
+          <h1>Welcome to the Electronic Car Page</h1>
+          <p>Discover the latest in electric vehicle technology and find your perfect car.</p>
+      </div>
+      <div id="main-fi">
+          <div class="mfi" id="recently-launched">
+            <div class="car-item"><h2>Recently Launched</h2></div>
+            <div class="car-list">
+                <!-- Car items will be dynamically added here -->
+                <div class="car-item">
+                    <img src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/vehicles/2025/crownsignia/gallery/CRS_MY25_0004_V001_desktop.png?fmt=jpeg&fit=crop&qlt=90&wid=1024" alt="Car 1">
+                    <h3>Car Model 1</h3>
+                    <p>$30,000</p>
+                </div>
+                <div class="car-item">
+                    <img src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/vehicles/2025/bz4x/mlp/highlight-gallery/BZ4_MY25_0002_V001.png?fmt=jpeg&fit=crop&qlt=90&wid=1024" alt="Car 2">
+                    <h3>Car Model 2</h3>
+                    <p>$40,000</p>
+                </div>
+            </div>
+          </div>
+          <div class="mfi" id="popular-cars">
+            <div class="car-item"><h2>Popular Cars</h2></div>
+            <div class="car-list">
+                <!-- Car items will be dynamically added here -->
+                <div class="car-item">
+                    <img src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/vehicles/2025/landcruiser/mlp/short-gallery/LND_MY24_0024_V002.png?fmt=jpeg&fit=crop&qlt=90&wid=1024" alt="Car 3">
+                    <h3>Car Model 3</h3>
+                    <p>$50,000</p>
+                </div>
+                <div class="car-item">
+                    <img src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/vehicles/2025/rav4pluginhybrid/mlp/short-gallery/RPH_MY25_0002_V001-desktop.png?fmt=jpeg&fit=crop&qlt=90&wid=1024" alt="Car 4">
+                    <h3>Car Model 4</h3>
+                    <p>$60,000</p>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="car-container" id="car-container" style="display: none;">
+        <!-- Cars will be dynamically added here -->
+    </div>
+
+    <!-- Booking and Purchase Details Section -->
+    <section class="details-section" id="details-section" style="display: none;">
+        <h2>Booking and Purchase Details</h2>
+        <div id="details-container" class="details-content">
+            <div class="details-text">
+                <p>No details available yet. Book or buy a car to see details here.</p>
+            </div>
+            <div class="details-image">
+                <!-- Car image will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+
+    <div id="f-sec" zIndex="100" >
+      <h2>this is car</h2>
+    </div>
+
+    <script src="car.js"></script>        
+</body>
+</html>

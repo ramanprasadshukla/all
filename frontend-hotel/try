@@ -1,0 +1,24 @@
+<!-- db.datas.insertMany([
+{ id: 1, name: "Deluxe Room", description: "Spacious room with a king-size bed.", inDate: "2025-02-26", outDate: "2025-02-28", image: "delux.jpg" },
+{ id: 2, name: "Deluxe Room", description: "Spacious room with a king-size bed.", inDate: "2025-02-26", outDate: "2025-02-28", image: "delux.jpg" },
+{ id: 3, name: "Deluxe Room", description: "Spacious room with a king-size bed.", inDate: "2025-02-26", outDate: "2025-02-28", image: "delux.jpg" },
+{ id: 4, name: "Deluxe Room", description: "Spacious room with a king-size bed.", inDate: "2025-02-26", outDate: "2025-02-28", image: "delux.jpg" },
+{ id: 5, name: "Deluxe Room", description: "Spacious room with a king-size bed.", inDate: "2025-02-26", outDate: "2025-02-28", image: "delux.jpg" },
+{ id: 6, name: "Deluxe Room", description: "Spacious room with a king-size bed.", inDate: "2025-02-26", outDate: "2025-02-28", image: "delux.jpg" },
+{ id: 7, name: "Suite", description: "Luxury suite with ocean view.", inDate: "2025-03-04", outDate: "2025-03-04", image: "site.jpg" },
+{ id: 8, name: "Suite", description: "Luxury suite with ocean view.", inDate: "2025-03-04", outDate: "2025-03-04", image: "site.jpg" },
+{ id: 9, name: "Suite", description: "Luxury suite with ocean view.", inDate: "2025-03-04", outDate: "2025-03-04", image: "site.jpg" },
+{ id: 10, name: "Suite", description: "Luxury suite with ocean view.", inDate: "2025-03-04", outDate: "2025-03-04", image: "site.jpg" },
+{ id: 11, name: "Suite", description: "Luxury suite with ocean view.", inDate: "2025-03-04", outDate: "2025-03-04", image: "site.jpg" },
+{ id: 12, name: "Suite", description: "Luxury suite with ocean view.", inDate: "2025-03-04", outDate: "2025-03-04", image: "site.jpg" },
+{ id: 13, name: "Suite", description: "Luxury suite with ocean view.", inDate: "2025-03-04", outDate: "2025-03-04", image: "site.jpg" },
+]);
+
+
+db.users.insertMany([
+{ username: 'user1', password: 'pass123', books: [{ id: 4, name: "Deluxe Room", description: "Spacious room with a king-size bed.", inDate: "2025-02-26", outDate: "2025-02-28", image: "delux.jpg" },
+  { id: 11, name: "Suite", description: "Luxury suite with ocean view.", inDate: "2025-03-04", outDate: "2025-03-04", image: "site.jpg" },
+]},
+{ username: 'guest', password: 'guest123' }
+]); -->
+
